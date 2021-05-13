@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+    color: white;
+}
+#logo{
+    margin-top: 20px;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#autor{
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+div#nav{
+    background-color: orange;
+    height: 50px;
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    opacity: 0.85;
+}
+
+div.kafelek_nav{
+    background-color: orange;
+    float:left;
+    margin: 0 20px;
+}
+
+div#content{
+    clear: both;
+    padding-top: 15px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.kafelek_content{
+    float:left;
+    width: calc(50% - 50px);
+    height: 100px;
+    background-color: #5d0e75;
+    opacity: 0.9;
+    text-align: center;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+div.kafelek_nav:hover{
+    margin: 0 60px;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+a.calc{
+    text-decoration: none;
+    color:#e8ffe0;
+    font-size: 30px;
+}
+
+div.kafelek_content:hover{
+    opacity: 1;
+}
