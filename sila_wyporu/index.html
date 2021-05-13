@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portal fizyczny</title>
+        <link rel="stylesheet" href="../styl_calc.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+        <script src="../nav.js"></script>
+    </head>
+
+    <body>
+        <div id="logo">Portal fizyczny</div>
+        <div id="autor">by Daniel Sobczak 3ms</div>
+        <div id="nav">
+            <div class="kafelek_nav"><a href="../">Strona głowna</a></div>
+            <div class="kafelek_nav" onclick="kontakt()">Kontakt</div>
+            <div class="kafelek_nav"><a href="https://www.youtube.com/user/SciTeraz">YouTube</a></div>
+            <div class="kafelek_nav" onclick="newsletter()">Newsletter</div>
+        </div>
+
+        <div id="content">
+            <div id="opis">
+            </div>
+
+            <div id="form">
+                Gęstość:
+                <input type="number" id="masa">kg/m3
+                <br/>Objętość wypartej cieczy:
+                <input type="number" id="roznica">dm3
+                <br/><button onclick="licz()">Oblicz</button>
+            </div>
+
+            <script>
+                function licz(){
+                    var dane1 = document.getElementById("masa").value;
+                    var dane2 = document.getElementById("roznica").value;
+                    dane1 = parseFloat(dane1);
+                    dane2 = parseFloat(dane2);
+                    wynik = "Wynik: "+dane1*dane2*10+"N";
+                    document.getElementById("wynik").innerHTML=wynik;
+                }
+            </script>
+
+            <div id="wynik">
+            </div>
+        </div>
+
+    </body>
+</html>
